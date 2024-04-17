@@ -1,8 +1,8 @@
-# 컴퓨터그래픽스및영상처리 과제 1
+# 컴퓨터그래픽스및영상처리 과제 4 Q1
 
 - 본 과제의 개발 환경으로는 vscode와 cmake를 사용하였습니다.
 - 초기 환경 설정 및 openGL을 다루는 데에 필요한 스킬은 링크를 따라가면 확인하실 수 있는 [유튜브 영상 재생목록](https://www.youtube.com/playlist?list=PLvNHCGtd4kh_cYLKMP_E-jwF3YKpDP4hf)을 참고하여 공부하였습니다.
-- OpenGL과 glm을 활용하여 transformation을 진행하는 방법은 [link](https://blog.naver.com/junsueg5737/220511107783)를 참고하였습니다.
+- 김소영 학우의 도움을 일부 받아 진행하였습니다.
 
 ---
 
@@ -85,7 +85,11 @@ Debug 모드이므로 하단의 DEBUG CONSOLE에서 출력 및 동작을 확인할 수 있습니다.
     
     이 외에 수정된 부분은 없습니다.
 
-    - main.cpp 파일이 동작의 핵심이 되는 파일입니다.
+    - main.cpp 파일은 동작의 핵심이 되는 파일입니다.
+
+        main.cpp에서는 sphere_scene.cpp의 변수를 extern을 통해 불러와 사용하였습니다.
+
+        또한 using namespace glm; using namespace std;를 사용하였으므로 glm::와 같은 표현이 생략되어 있습니다.
 
         아래는 main.cpp 파일의 각 함수에 대하여 설명하기 위한 내용입니다.
 
